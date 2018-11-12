@@ -1,9 +1,10 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-   array.map do |key, arguments|
+   final = array.select do |key, arguments|
     if array[key] == arguments
       key
     end
   end
+  final
 end
